@@ -1,0 +1,19 @@
+<p class="text-center">product works!</p>
+
+<products-price
+  *ngIf="isProductVisible"
+  [price]="currentPrice"
+/>
+
+
+<div class="d-flex justify-content-evenly">
+  <button (click)="decreasePrice()">
+    -1 Price
+  </button>
+  <button (click)="isProductVisible = !isProductVisible">
+    Toggle
+  </button>
+  <button (click)="increasePrice()">
+    +1 Price
+  </button>
+</div>
